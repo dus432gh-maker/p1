@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>개발일지</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="layout">
+
+            <!-- 좌측 미니달력 -->
+            <div class="calendar-box">
+                <div class="year-control">
+                    <button id="prev-year">◀</button>
+                    <span id="year-display"></span>
+                    <button id="next-year">▶</button>
+                </div>
+
+                <div class="month-control">
+                    <button id="prev-month">◀</button>
+                    <span id="month-display"></span>
+                    <button id="next-month">▶</button>
+                </div>
+
+                <div class="calendar-grid" id="calendar"></div>
+            </div>
+
+            <!-- 패치노트 영역 -->
+            <div class="patch-box" id="patch-container">
+                <p>날짜를 선택하세요.</p>
+            </div>
+
+        </div>
+
+        <script src="notes.js"></script>
+        <script src="devnote.js"></script>
+    </body>
+</html>

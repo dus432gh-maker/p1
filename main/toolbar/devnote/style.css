@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* 달력 */
+.calendar-box {
+  width: 260px;
+  padding: 20px;
+  border-right: 1px solid #333;
+}
+
+.year-control,
+.month-control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+}
+
+.day:hover {
+  background: #333;
+}
+
+.day.selected {
+  background: #555;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 패치노트 */
+.patch-box {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.patch-group {
+  margin-bottom: 30px;
+}
+
+.patch-group h3 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
