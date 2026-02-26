@@ -1,0 +1,23 @@
+.navbar {
+  height: 120px;   /* 원하는 값 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-family: sans-serif;
+  font-size:30px;
+  border-bottom: 1px solid #333;
+}
+
+.icon-btn {
+  color: white;
+  font-size: 50px;
+  margin-left: 40px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.icon-btn:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+}

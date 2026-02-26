@@ -1,7 +1,7 @@
 const PATCH_DATA = 
 [
   {
-    date: "2026-02-25",
+    date: "2026-02-24",
     page: "메인",
     content: `
 - 개발 시작
@@ -11,7 +11,7 @@ const PATCH_DATA =
 
 
   {
-    date: "2026-02-26",
+    date: "2026-02-25",
     page: "개발노트",
     content: `
 - 미니달력 구현
@@ -19,11 +19,19 @@ const PATCH_DATA =
 `
   },
   {
-    date: "2026-02-26",
+    date: "2026-02-25",
     page: "메인",
     content: `
 - 개발노트 페이지 추가
 - 호스팅 성공
+`
+  },
+  {
+    date: "2026-02-26",
+    page: "메인",
+    content: `
+- 공통 헤더 추가
+- 뷰니풀너드 재밌네
 `
   },
   

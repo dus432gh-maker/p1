@@ -1,17 +1,20 @@
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="index.css" />
+
+<script>
+    fetch('/header.html')
+    .then(res => res.text())
+    .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+    });
+</script>
 
 <body>
-
-    <header class="navbar">
-        <h1>꿀곰의 연구소</h1>
-        <a href="main/toolbar/devnote/page.html" class="dev-btn">개발노트</a>
-    </header>
+    <div id="navbar"></div>
 
     <main class="card-container">
         <a href="games/UpgradeSimulator/page.html" class="card">
         강화 시뮬
         </a>
-
         <a href="games/GachaSimulator/page.html" class="card">
         뽑기 시뮬
         </a>
@@ -33,5 +36,4 @@
         <div class="card">Coming Soon</div>
         <div class="card">Coming Soon</div>
     </main>
-
 </body>
