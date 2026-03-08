@@ -26,6 +26,8 @@ const PATCH_DATA =
 - 호스팅 성공
 `
   },
+
+
   {
     date: "2026-02-26",
     page: "메인",
@@ -34,5 +36,13 @@ const PATCH_DATA =
 - 뷰니풀너드 재밌네
 `
   },
-  
+
+
+    {
+    date: "2026-03-08",
+    page: "메인",
+    content: `
+- 
+`
+  },
 ];
