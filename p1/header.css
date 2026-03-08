@@ -1,12 +1,17 @@
 .navbar {
-  height: 120px;   /* 원하는 값 */
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
   font-family: sans-serif;
-  font-size:30px;
+  font-size: 30px;
   border-bottom: 1px solid #333;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
 }
 
 .icon-btn {
@@ -15,9 +20,23 @@
   margin-left: 40px;
   text-decoration: none;
   transition: 0.2s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-btn span {
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .icon-btn:hover {
   color: #00bcd4;
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.navbar h1 {
+  cursor: default;
+  user-select: none;
 }

@@ -5,14 +5,14 @@
         <title>개발일지</title>
 
         <!-- 헤더 CSS 꼭 추가 -->
-        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="../../../header.html">
         <link rel="stylesheet" href="devnote.css">
     </head>
 
     <body>
         <div id="navbar"></div>
         <script>
-            fetch('/header.html')
+            fetch('../../../header.html')
             .then(res => res.text())
             .then(data => {
             document.getElementById('navbar').innerHTML = data;
