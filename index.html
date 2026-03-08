@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="index.css" />
 
 <script>
-    fetch('/header.html')
+    fetch('header.html')
     .then(res => res.text())
     .then(data => {
     document.getElementById('navbar').innerHTML = data;
@@ -13,10 +13,12 @@
 
     <main class="card-container">
         <a href="games/UpgradeSimulator/page.html" class="card">
-        강화 시뮬
+        강화
+        시뮬레이터
         </a>
         <a href="games/GachaSimulator/page.html" class="card">
-        뽑기 시뮬
+        뽑기
+        시뮬레이터
         </a>
         <div class="card">오목</div>
         <div class="card">알까기</div>
@@ -36,4 +38,3 @@
         <div class="card">Coming Soon</div>
         <div class="card">Coming Soon</div>
     </main>
-</body>
